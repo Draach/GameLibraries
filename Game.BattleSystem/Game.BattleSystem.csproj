@@ -49,9 +49,9 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="HitPoints\HitPoints.cs" />
-        <Compile Include="HitPoints\HitPointsOperationOptions.cs" />
-        <Compile Include="HitPoints\IHitPoints.cs" />
+        <Compile Include="Health\Health.cs" />
+        <Compile Include="Health\HealthPointsOperationOptions.cs" />
+        <Compile Include="Health\IHealth.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>

@@ -1,6 +1,6 @@
 namespace Game.BattleSystem
 {
-    public enum HitPointsOperationOptions
+    public enum HealthPointsOperationOptions
     {
         AllOrNothing,
         AsMuchAsPossible
