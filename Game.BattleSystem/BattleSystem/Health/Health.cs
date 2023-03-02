@@ -23,6 +23,11 @@ namespace Game.BattleSystem
             MaximumHealthPoints = maximumHealthPoints;
         }
 
+        public void RestoreToFullHealth()
+        {
+            AvailableHealthPoints = MaximumHealthPoints;
+        }
+
         private void HandleHealthPointsSurplus()
         {
             if (AvailableHealthPoints > MaximumHealthPoints)

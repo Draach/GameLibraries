@@ -7,6 +7,7 @@ namespace Game.BattleSystem
         IObservable<IHealth> OnHealthPointsChanged { get; }
         uint MaximumHealthPoints { get; }
         uint AvailableHealthPoints { get; }
+        void RestoreToFullHealth();
 
         void AddHealthPoints(uint healthPoints,
             HealthPointsOperationOptions options = HealthPointsOperationOptions.AsMuchAsPossible);

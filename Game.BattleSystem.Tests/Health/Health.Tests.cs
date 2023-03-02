@@ -28,6 +28,14 @@ namespace Game.BattleSystem.Tests
         }
 
         [Test]
+        public void HealthPoints_RestoreToFullHealth()
+        {
+            health.RestoreToFullHealth();
+            
+            Assert.AreEqual(health.MaximumHealthPoints, health.AvailableHealthPoints);
+        }
+
+        [Test]
         public void HealthPoints_OnHealthPointsChanged()
         {
             IHealth newHealth = null;
@@ -88,16 +96,18 @@ namespace Game.BattleSystem.Tests
         [Test]
         public void HealthPoints_SubstractHealthPointsAsMuchAsPossible()
         {
-            health.SubstractHealthPoints(initialAvailableHealthPointsAmount, HealthPointsOperationOptions.AsMuchAsPossible);
+            health.SubstractHealthPoints(initialAvailableHealthPointsAmount,
+                HealthPointsOperationOptions.AsMuchAsPossible);
             Assert.AreEqual(initialAvailableHealthPointsAmount - initialAvailableHealthPointsAmount,
                 health.AvailableHealthPoints);
         }
-        
+
         [Test]
         public void HealthPoints_SubstractHealthPointsAsMuchAsPossibleWithSurplus()
         {
             uint surplus = 5;
-            health.SubstractHealthPoints(initialAvailableHealthPointsAmount + surplus, HealthPointsOperationOptions.AsMuchAsPossible);
+            health.SubstractHealthPoints(initialAvailableHealthPointsAmount + surplus,
+                HealthPointsOperationOptions.AsMuchAsPossible);
             Assert.AreEqual(0,
                 health.AvailableHealthPoints);
         }
