@@ -39,16 +39,7 @@ namespace Game.BattleSystem
         {
             if (options == HitPointsOperationOptions.AllOrNothing)
             {
-                if (AvailableHitPoints + hitPoints <= MaximumHitPoints)
-                {
-                    AvailableHitPoints += hitPoints;
-                    NotifyHitPointsChange();
-                }
-                else
-                {
-                    // TODO: Create custom exception.
-                    throw new Exception("Cannot replenish that amount of hitpoints.");
-                }
+                AddAllOrNothing(hitPoints);
             }
             else
             {
@@ -56,6 +47,25 @@ namespace Game.BattleSystem
                 HandleHitPointsSurplus();
                 NotifyHitPointsChange();
             }
+        }
+
+        private void AddAllOrNothing(uint hitPoints)
+        {
+            if (CanAdd(hitPoints))
+            {
+                AvailableHitPoints += hitPoints;
+                NotifyHitPointsChange();
+            }
+            else
+            {
+                // TODO: Create custom exception.
+                throw new Exception("Cannot replenish that amount of hitpoints.");
+            }
+        }
+
+        private bool CanAdd(uint hitPoints)
+        {
+            return AvailableHitPoints + hitPoints <= MaximumHitPoints;
         }
 
         private bool CanSubstract(uint hitPoints)
