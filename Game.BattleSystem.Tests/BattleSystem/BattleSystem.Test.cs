@@ -27,6 +27,18 @@ namespace Game.BattleSystem.Tests
         }
 
         [Test]
+        public void BattleSystem_RestoreToFullHealth()
+        {
+            healthMock.Setup(x => x.RestoreToFullHealth()).Callback(() =>
+            {
+                healthMock.Setup(x => x.AvailableHealthPoints).Returns(healthMock.Object.MaximumHealthPoints);
+            });
+            battleSystem.RestoreToFullHealth();
+
+            Assert.AreEqual(battleSystem.MaximumHealthPoints, battleSystem.MaximumHealthPoints);
+        }
+
+        [Test]
         public void BattleSystem_Heal()
         {
             uint amountToHeal = 5;

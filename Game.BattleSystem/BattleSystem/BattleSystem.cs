@@ -14,6 +14,11 @@ namespace Game.BattleSystem
             this.health = health;
         }
 
+        public void RestoreToFullHealth()
+        {
+            health.RestoreToFullHealth();
+        }
+
         public void Heal(uint healthPoints)
         {
             health.AddHealthPoints(healthPoints);
