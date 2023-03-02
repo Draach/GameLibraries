@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Characters", "Game.Characters\Game.Characters.csproj", "{B1BC48EA-A5B8-4973-90D6-EB616B32092E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.BattleSystem", "Game.BattleSystem\Game.BattleSystem.csproj", "{B666A38C-2B64-4B2A-BA6D-15FAEC1831DA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Base", "Game.Base\Game.Base.csproj", "{41F0CFB1-F423-41B2-A7DB-EFCF7E1207C0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.BattleSystem.Tests", "Game.BattleSystem.Tests\Game.BattleSystem.Tests.csproj", "{29A24A61-772E-436C-A57B-64599812BC7E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B1BC48EA-A5B8-4973-90D6-EB616B32092E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B1BC48EA-A5B8-4973-90D6-EB616B32092E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B1BC48EA-A5B8-4973-90D6-EB616B32092E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B1BC48EA-A5B8-4973-90D6-EB616B32092E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B666A38C-2B64-4B2A-BA6D-15FAEC1831DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B666A38C-2B64-4B2A-BA6D-15FAEC1831DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B666A38C-2B64-4B2A-BA6D-15FAEC1831DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B666A38C-2B64-4B2A-BA6D-15FAEC1831DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41F0CFB1-F423-41B2-A7DB-EFCF7E1207C0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41F0CFB1-F423-41B2-A7DB-EFCF7E1207C0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41F0CFB1-F423-41B2-A7DB-EFCF7E1207C0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41F0CFB1-F423-41B2-A7DB-EFCF7E1207C0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29A24A61-772E-436C-A57B-64599812BC7E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29A24A61-772E-436C-A57B-64599812BC7E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29A24A61-772E-436C-A57B-64599812BC7E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29A24A61-772E-436C-A57B-64599812BC7E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
