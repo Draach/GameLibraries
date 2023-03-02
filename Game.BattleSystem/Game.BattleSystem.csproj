@@ -49,9 +49,11 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
-        <Compile Include="Health\Health.cs" />
-        <Compile Include="Health\HealthPointsOperationOptions.cs" />
-        <Compile Include="Health\IHealth.cs" />
+        <Compile Include="BattleSystem\BattleSystem.cs" />
+        <Compile Include="BattleSystem\Health\Health.cs" />
+        <Compile Include="BattleSystem\Health\HealthPointsOperationOptions.cs" />
+        <Compile Include="BattleSystem\Health\IHealth.cs" />
+        <Compile Include="BattleSystem\IBattleSystem.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>

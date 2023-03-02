@@ -6,8 +6,8 @@ namespace Game.BattleSystem
 {
     public class Health : IHealth
     {
-        private Subject<IHealth> onHealthPointsChanged = new Subject<IHealth>();
-        public IObservable<IHealth> OnHealthPointsChanged => onHealthPointsChanged.AsObservable();
+        private Subject<IHealth> onHealthChanged = new Subject<IHealth>();
+        public IObservable<IHealth> OnHealthPointsChanged => onHealthChanged.AsObservable();
         public uint MaximumHealthPoints { get; private set; }
         public uint AvailableHealthPoints { get; private set; }
 
@@ -31,7 +31,7 @@ namespace Game.BattleSystem
 
         private void NotifyHealthPointsChange()
         {
-            onHealthPointsChanged.OnNext(this);
+            onHealthChanged.OnNext(this);
         }
 
         public void AddHealthPoints(uint healthPoints,
