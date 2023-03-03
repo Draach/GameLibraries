@@ -1,11 +1,10 @@
-// 
-// Copyright (c) 2022 Indelve, Inc. or any of its affiliates. All rights reserved.
-// 
-
-namespace System.Runtime.CompilerServices
+namespace Game.Base
 {
-    public class BaseClass
+    public abstract class BaseClass
     {
-        
+        // TODO: Create logger class/service and inject it in baseclass.
+        protected BaseClass()
+        {
+        }
     }
 }

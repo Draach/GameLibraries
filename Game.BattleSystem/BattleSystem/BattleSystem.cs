@@ -1,5 +1,5 @@
 using System;
-using System.Runtime.CompilerServices;
+using Game.Base;
 
 namespace Game.BattleSystem
 {
