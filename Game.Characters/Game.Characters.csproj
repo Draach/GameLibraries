@@ -39,10 +39,15 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Character\Character.cs" />
+        <Compile Include="Character\ICharacter.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
-      <Content Include="Character\.gitkeep" />
+      <ProjectReference Include="..\Game.Base\Game.Base.csproj">
+        <Project>{41f0cfb1-f423-41b2-a7db-efcf7e1207c0}</Project>
+        <Name>Game.Base</Name>
+      </ProjectReference>
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
     <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
