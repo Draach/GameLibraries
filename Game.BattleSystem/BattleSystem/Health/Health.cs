@@ -76,7 +76,7 @@ namespace Game.BattleSystem
 
         private bool CanSubstract(uint healthPoints)
         {
-            return healthPoints <= AvailableHealthPoints;
+            return healthPoints < AvailableHealthPoints;
         }
 
         public void SubstractHealthPoints(uint healthPoints,
