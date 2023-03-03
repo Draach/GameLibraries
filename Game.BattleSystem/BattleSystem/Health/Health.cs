@@ -1,10 +1,11 @@
 using System;
 using System.Reactive.Linq;
 using System.Reactive.Subjects;
+using System.Runtime.CompilerServices;
 
 namespace Game.BattleSystem
 {
-    public class Health : IHealth
+    public class Health : BaseClass, IHealth
     {
         private Subject<IHealth> onHealthChanged = new Subject<IHealth>();
         public IObservable<IHealth> OnHealthPointsChanged => onHealthChanged.AsObservable();

@@ -1,8 +1,9 @@
 using System;
+using System.Runtime.CompilerServices;
 
 namespace Game.BattleSystem
 {
-    public class BattleSystem : IBattleSystem
+    public class BattleSystem : BaseClass, IBattleSystem
     {
         private IHealth health;
         public IObservable<IHealth> OnHealthChanged => health.OnHealthPointsChanged;
