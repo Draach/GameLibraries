@@ -74,6 +74,7 @@ namespace Game.BattleSystem
             return AvailableHealthPoints + healthPoints <= MaximumHealthPoints;
         }
 
+        // TODO: Review if we should be able to lower the HealthPoints to 0. (Aka kill the character). <=
         private bool CanSubstract(uint healthPoints)
         {
             return healthPoints < AvailableHealthPoints;

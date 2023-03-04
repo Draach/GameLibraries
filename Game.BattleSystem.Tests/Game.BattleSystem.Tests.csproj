@@ -65,6 +65,10 @@
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <ItemGroup>
+      <ProjectReference Include="..\Game.Base\Game.Base.csproj">
+        <Project>{41f0cfb1-f423-41b2-a7db-efcf7e1207c0}</Project>
+        <Name>Game.Base</Name>
+      </ProjectReference>
       <ProjectReference Include="..\Game.BattleSystem\Game.BattleSystem.csproj">
         <Project>{b666a38c-2b64-4b2a-ba6d-15faec1831da}</Project>
         <Name>Game.BattleSystem</Name>

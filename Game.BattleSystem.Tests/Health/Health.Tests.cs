@@ -31,7 +31,7 @@ namespace Game.BattleSystem.Tests
         public void HealthPoints_RestoreToFullHealth()
         {
             health.RestoreToFullHealth();
-            
+
             Assert.AreEqual(health.MaximumHealthPoints, health.AvailableHealthPoints);
         }
 

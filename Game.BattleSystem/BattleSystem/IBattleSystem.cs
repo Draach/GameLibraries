@@ -8,8 +8,8 @@ namespace Game.BattleSystem
         uint MaximumHealthPoints { get; }
         uint AvailableHealthPoints { get; }
         void RestoreToFullHealth();
-        void Heal(uint healthPoints);
-        void Hurt(uint healthPoints);
+        void Heal(uint healthPoints, HealthPointsOperationOptions options = HealthPointsOperationOptions.AsMuchAsPossible);
+        void Hurt(uint healthPoints, HealthPointsOperationOptions options = HealthPointsOperationOptions.AsMuchAsPossible);
         void IncreaseMaximumHealth(uint healthPointsToIncrease);
     }
 }

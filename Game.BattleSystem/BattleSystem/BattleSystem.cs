@@ -20,14 +20,14 @@ namespace Game.BattleSystem
             health.RestoreToFullHealth();
         }
 
-        public void Heal(uint healthPoints)
+        public void Heal(uint healthPoints, HealthPointsOperationOptions options = HealthPointsOperationOptions.AsMuchAsPossible)
         {
-            health.AddHealthPoints(healthPoints);
+            health.AddHealthPoints(healthPoints, options);
         }
 
-        public void Hurt(uint healthPoints)
+        public void Hurt(uint healthPoints, HealthPointsOperationOptions options = HealthPointsOperationOptions.AsMuchAsPossible)
         {
-            health.SubstractHealthPoints(healthPoints);
+            health.SubstractHealthPoints(healthPoints, options);
         }
 
         public void IncreaseMaximumHealth(uint healthPointsToIncrease)
