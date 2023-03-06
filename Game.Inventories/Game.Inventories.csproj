@@ -39,6 +39,10 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Item\IItem.cs" />
+        <Compile Include="Item\ItemCategory.cs" />
+        <Compile Include="Item\ItemKey.cs" />
+        <Compile Include="Item\ItemRarity.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
