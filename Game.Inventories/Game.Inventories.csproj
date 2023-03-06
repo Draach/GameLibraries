@@ -39,10 +39,24 @@
         <Reference Include="System.Xml" />
     </ItemGroup>
     <ItemGroup>
+        <Compile Include="Item\Accessory\IAccessory.cs" />
+        <Compile Include="Item\Armor\IArmor.cs" />
+        <Compile Include="Item\Consumable\IConsumable.cs" />
+        <Compile Include="Item\Enchantment\IEnchantment.cs" />
+        <Compile Include="Item\Gem\IGem.cs" />
+        <Compile Include="Item\Glyph\IGlyph.cs" />
+        <Compile Include="Item\IDurable.cs" />
         <Compile Include="Item\IItem.cs" />
+        <Compile Include="Item\Item.cs" />
         <Compile Include="Item\ItemCategory.cs" />
         <Compile Include="Item\ItemKey.cs" />
         <Compile Include="Item\ItemRarity.cs" />
+        <Compile Include="Item\Miscellaneous\IMiscellaneous.cs" />
+        <Compile Include="Item\QuestItem\IQuestItem.cs" />
+        <Compile Include="Item\Recipe\IRecipe.cs" />
+        <Compile Include="Item\Tool\ITool.cs" />
+        <Compile Include="Item\TradeGood\ITradeGood.cs" />
+        <Compile Include="Item\Weapon\IWeapon.cs" />
         <Compile Include="Properties\AssemblyInfo.cs" />
     </ItemGroup>
     <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
