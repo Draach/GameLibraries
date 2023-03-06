@@ -40,12 +40,14 @@
     </ItemGroup>
     <ItemGroup>
         <Compile Include="Item\Accessory\IAccessory.cs" />
+        <Compile Include="Item\Armor\ArmorType.cs" />
         <Compile Include="Item\Armor\IArmor.cs" />
         <Compile Include="Item\Consumable\IConsumable.cs" />
         <Compile Include="Item\Enchantment\IEnchantment.cs" />
         <Compile Include="Item\Gem\IGem.cs" />
         <Compile Include="Item\Glyph\IGlyph.cs" />
         <Compile Include="Item\IDurable.cs" />
+        <Compile Include="Item\IEquippable.cs" />
         <Compile Include="Item\IItem.cs" />
         <Compile Include="Item\Item.cs" />
         <Compile Include="Item\ItemCategory.cs" />

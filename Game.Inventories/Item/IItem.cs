@@ -10,7 +10,6 @@ namespace Game.Inventories
         int BuyPrice { get; }
         string Description { get; }
         bool IsUnique { get; set; }
-        bool IsEquippable { get; }
         bool IsStackable { get; }
         int MaxStack { get; }
     }

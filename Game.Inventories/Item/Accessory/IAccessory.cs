@@ -1,8 +1,7 @@
 namespace Game.Inventories
 {
-    public interface IAccessory : IItem, IDurable
+    public interface IAccessory : IItem, IDurable, IEquippable
     {
-        int RequiredLevel { get; set; }
         int Strength { get; }
         int Agility { get; }
         int Intellect { get; }
